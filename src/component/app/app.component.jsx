@@ -6,7 +6,6 @@ import "../../index.css";
 import { Home } from "../home";
 import { SignIn } from "../sign-in";
 import { LogIn } from "../log-in";
-import { Hero } from "../hero/hero.component";
 import { Footer } from "../footer";
 
 const App = () => {
