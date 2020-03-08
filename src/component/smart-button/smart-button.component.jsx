@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "@reach/router";
+import { StyledSmartButton, StyledSmartLink } from "./smart-button.style";
 
 const SmartButton = ({ type = "link", children }) => {
   return (
-    <div>
-      {type === "button" && <button>{children}</button>}
-      {type === "link" && <Link to="button">{children}</Link>}
-    </div>
+    <>
+      {type === "button" && <StyledSmartButton>{children}</StyledSmartButton>}
+      {type === "link" && (
+        <StyledSmartLink to="button">{children}</StyledSmartLink>
+      )}
+    </>
   );
 };
 

@@ -1,16 +1,21 @@
 import React from "react";
 import { SmartButton } from "../smart-button";
+import {
+  StyledHeroTitle,
+  StyledHeroBackground,
+  StyledHeroDescription
+} from "./hero.style";
 
 const Hero = () => {
   return (
-    <div>
-      <h1>Vestibulum pulvinar nisi orci vel</h1>
-      <p>
+    <StyledHeroBackground>
+      <StyledHeroTitle>Vestibulum pulvinar nisi orci vel</StyledHeroTitle>
+      <StyledHeroDescription>
         Nam velit libero, ornare ac neque vitae, elementum lobortis justo.
         Vestibulum non finibus dolor.
-      </p>
-      <SmartButton>Call the action ?</SmartButton>
-    </div>
+      </StyledHeroDescription>
+      <SmartButton type="button">Call the action</SmartButton>
+    </StyledHeroBackground>
   );
 };
 
