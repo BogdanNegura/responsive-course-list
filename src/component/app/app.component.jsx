@@ -6,6 +6,8 @@ import "../../index.css";
 import { Home } from "../home";
 import { SignIn } from "../sign-in";
 import { LogIn } from "../log-in";
+import { Hero } from "../hero/hero.component";
+import { Footer } from "../footer";
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
         <SignIn path="/sign-in" />
         <LogIn path="/log-in" />
       </Router>
+      <Footer />
     </div>
   );
 };
