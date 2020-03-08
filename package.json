@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:api": "json-server --watch src/data/api.json --port 4455"
   },
   "eslintConfig": {
     "extends": "react-app"
