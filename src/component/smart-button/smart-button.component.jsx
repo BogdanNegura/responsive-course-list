@@ -1,10 +1,14 @@
 import React from "react";
 import { StyledSmartButton, StyledSmartLink } from "./smart-button.style";
 
-const SmartButton = ({ type = "link", children }) => {
+const SmartButton = ({ type = "link", children, handleOnClick }) => {
   return (
     <>
-      {type === "button" && <StyledSmartButton>{children}</StyledSmartButton>}
+      {type === "button" && (
+        <StyledSmartButton onClick={handleOnClick}>
+          {children}
+        </StyledSmartButton>
+      )}
       {type === "link" && (
         <StyledSmartLink to="button">{children}</StyledSmartLink>
       )}
